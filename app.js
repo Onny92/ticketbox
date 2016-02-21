@@ -10,7 +10,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 //var auth = require(_ + 'config/auth');
 //var session = require(_ + 'config/session');
-var lib = require('./lib');
+//var lib = require('./lib');
 var app = express();
 
 //set locals
@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(lib);
+//app.use(lib);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
